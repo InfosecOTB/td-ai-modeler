@@ -71,17 +71,17 @@ An intelligent threat modeling application that uses Large Language Models (LLMs
 
 | Provider | Model | API Key Variable | Recommended Configuration |
 |----------|-------|------------------|---------------------------|
-| **Anthropic** | `anthropic/claude-sonnet-4-5-20250929` | `ANTHROPIC_API_KEY` | `# litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
-| **Anthropic** | `anthropic/claude-opus-4-1-20250805` | `ANTHROPIC_API_KEY` | `# litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
-| **Novita** | `novita/deepseek/deepseek-r1` | `NOVITA_API_KEY` | `# litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=16000` |
-| **Novita** | `novita/qwen/qwen3-coder-480b-a35b-instruct` | `NOVITA_API_KEY` | `# litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
-| **Novita** | `novita/deepseek/deepseek-v3.1-terminus` | `NOVITA_API_KEY` | `# litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
-| **Local Ollama** | `ollama/gemma3:27b` | None | `# litellm.enable_json_schema_validation = True`<br>`# temperature = 0.1`<br>`response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
+| **Anthropic** | `anthropic/claude-sonnet-4-5-20250929` | `ANTHROPIC_API_KEY` | `# litellm.enable_json_schema_validation = False`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
+| **Anthropic** | `anthropic/claude-opus-4-1-20250805` | `ANTHROPIC_API_KEY` | `# litellm.enable_json_schema_validation = False`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
+| **Novita** | `novita/deepseek/deepseek-r1` | `NOVITA_API_KEY` | `# litellm.enable_json_schema_validation = False`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=16000` |
+| **Novita** | `novita/qwen/qwen3-coder-480b-a35b-instruct` | `NOVITA_API_KEY` | `# litellm.enable_json_schema_validation = False`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
+| **Novita** | `novita/deepseek/deepseek-v3.1-terminus` | `NOVITA_API_KEY` | `# litellm.enable_json_schema_validation = False`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
+| **Local Ollama** | `ollama/gemma3:27b` | None | `# litellm.enable_json_schema_validation = False`<br>`# temperature = 0.1`<br>`response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
 | **xAI** | `xai/grok-4-fast-reasoning-latest` | `XAI_API_KEY` | `litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
 | **xAI** | `xai/grok-4-latest` | `XAI_API_KEY` | `litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
 | **OpenAI** | `openai/gpt-5` | `OPENAI_API_KEY` | `litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
 | **OpenAI** | `openai/gpt-5-mini` | `OPENAI_API_KEY` | `litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
-| **Google** | `gemini/gemini-2.5-pro` | `GOOGLE_API_KEY` | `# litellm.enable_json_schema_validation = True`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
+| **Google** | `gemini/gemini-2.5-pro` | `GOOGLE_API_KEY` | `# litellm.enable_json_schema_validation = False`<br>`temperature = 0.1`<br>`# response_format = AIThreatsResponseList`<br>`max_tokens=24000` |
 
 #### Recommended Configuration Parameters
 
